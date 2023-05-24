@@ -3,18 +3,18 @@ import Sidebar from "../components/sidebar/Sidebar";
 import UsersList from "./components/UsersList";
 
 export default async function UsersLayout({
-    children
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    const users = await getUsers();
-    return (
-        // @ts-expect-error Server Component
-        <Sidebar>
-        <div className="h-full">
-            <UsersList items={users || []} />
-            {children}
-        </div>
-        </Sidebar>
-    )
-};
+  const users = await getUsers();
+  return (
+    // @ts-expect-error Server Component
+    <Sidebar>
+      <div className="h-full">
+        <UsersList items={users || []} />
+        {children}
+      </div>
+    </Sidebar>
+  );
+}
