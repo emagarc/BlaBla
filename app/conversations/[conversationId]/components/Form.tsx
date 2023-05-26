@@ -49,7 +49,7 @@ const Form = () => {
         gap-2
         lg:gap-4
         w-full
-    "
+      "
     >
       <CldUploadButton
         options={{ maxFiles: 1 }}
@@ -60,8 +60,12 @@ const Form = () => {
       </CldUploadButton>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex intems-center gap-2 lg:gap-4 w-full"
-      >
+        className="
+          flex intems-center 
+          gap-2 lg:gap-4 
+          w-full
+          "
+        >
         <MessageInput
           id="message"
           register={register}

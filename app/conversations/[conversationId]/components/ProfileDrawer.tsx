@@ -56,21 +56,21 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
               inset-0
               bg-black
               bg-opacity-40
-              "
+            "
           />
           <div
             className="
               fixed
               inset-0
               overflow-hidden
-              "
+            "
           >
             <div
               className="
                 absolute
                 inset-0
                 overflow-hidden
-                "
+              "
             >
               <div
                 className="
@@ -81,7 +81,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                   flex
                   max-w-full
                   pl-10
-                  "
+                "
               >
                 <Transition.Child
                   as={Fragment}
@@ -96,7 +96,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                       pointer-events-auto
                       w-screen
                       max-w-md
-                      "
+                    "
                   >
                     <div
                       className="
@@ -142,7 +142,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                 focus:ring-2
                                 focus:ring-sky-500
                                 focus:ring-offset-2
-                                "
+                              "
                             >
                               <span className="sr-only">Close panel</span>
                               <IoClose size={24} />
@@ -159,7 +159,8 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                       >
                         <div
                           className="
-                            flex flex-col items-center  
+                            flex flex-col 
+                            items-center  
                           "
                         >
                           <div className="mb-2">

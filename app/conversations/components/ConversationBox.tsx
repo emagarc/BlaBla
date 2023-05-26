@@ -67,8 +67,7 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
   return (
     <div
       onClick={handleClick}
-      className={clsx(
-        `
+      className={clsx(`
         w-full
         p-3
         relative
@@ -79,7 +78,7 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
         rounded:lg
         transition
         cursor-pointer
-    `,
+      `,
         selected ? "bg-neutral-100" : "bg-white"
       )}
     >
