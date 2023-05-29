@@ -2,6 +2,7 @@ import Sidebar from "../components/sidebar/Sidebar";
 import ConversationsList from "./components/ConversationsList";
 import getConversations from "../actions/getConversations";
 import { FullConversationType, FullMessageType } from "../types";
+import getUsers from "../actions/getUsers";
 
 export default async function ConversationsLayout({
   children,
@@ -9,6 +10,8 @@ export default async function ConversationsLayout({
   children: React.ReactNode;
 }) {
   const conversations = await getConversations();
+
+  const users = await getUsers();
 
   // revisar el codigo de initialItems si a la postre da problemas.
 
@@ -26,7 +29,10 @@ export default async function ConversationsLayout({
     // @ts-expect-error Server Component
     <Sidebar>
       <div className="h-full">
-        <ConversationsList initialItems={initialItems} />
+        <ConversationsList 
+          initialItems={initialItems} 
+          users={users ?? []}  
+        />
         {children}
       </div>
     </Sidebar>
