@@ -1,4 +1,6 @@
-"use client"
+"use client";
+
+import ReactSelect from "react-select";
 
 interface SelectProps {
     label: string;
@@ -29,7 +31,23 @@ const Select: React.FC<SelectProps> = ({
             {label}
         </label>
         <div className="mt-2">
-            
+            <ReactSelect 
+                isDisabled={disabled}
+                value={value}
+                onChange={onChange}
+                isMulti
+                options={options}
+                menuPortalTarget={document.body}
+                styles={{
+                    menuPortal: (base) => ({
+                        ...base,
+                        zIndex: 9999
+                    })
+                }}
+                classNames={{
+                    control: () => "text-sm"
+                }}
+            />
         </div>
     </div>
   )
