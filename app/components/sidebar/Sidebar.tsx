@@ -12,6 +12,9 @@ async function Sidebar({
             <div 
                 className="
                     h-full
+                    bg-sidebar-image
+                    bg-contain
+                    bg-repeat-y
                 "
             >
                 <DesktopSidebar currentUser={currentUser!}/>
@@ -20,9 +23,6 @@ async function Sidebar({
                     className="
                         w-full
                         lg:pl-20 h-full
-                        bg-sidebar-image
-                        bg-contain
-                        bg-repeat-y
                         "
                     >
                 {children}

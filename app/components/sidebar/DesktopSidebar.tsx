@@ -36,7 +36,7 @@ const DesktopSidebar: React.FC<DesktopSidebarProps> = ({
           lg:w-20
           xl:px-6
           lg:overflow-y-auto
-          lg:bg-white
+          lg:bg-sky-400
           lg:border-r-[1px]
           lg:pb-4
           lg:flex
@@ -44,7 +44,7 @@ const DesktopSidebar: React.FC<DesktopSidebarProps> = ({
           justify-between
           bg-nav-image
           bg-contain    
-          bg-repeat-y  
+          bg-repeat-y
           "
         >
         <nav 

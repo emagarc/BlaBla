@@ -7,3 +7,27 @@ body,
 :root {
   height: 100%;
 }
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bg-header-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-sidebar-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

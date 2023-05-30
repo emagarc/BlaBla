@@ -13,10 +13,24 @@ module.exports = {
       },
       backgroundImage: {
         'home-image': "url('/images/message/message6.svg')",
-        'sidebar-image': "url('/images/sidebar/sidebar7.svg')",
+        'sidebar-image': "url('/images/message/honeycomb.svg')",
         'nav-image': "url('/images/sidebar/sidebar8.svg')",
+        'empty-image': "url('/images/message/message1.svg')",
+        'header-image': "url('/images/message/color-nav-violet.svg')",
         // Agrega más clases de fondo de pantalla aquí
-      }
+      },
+      transformOrigin: {
+        '0': '0%',
+      },
+      rotate: {
+        '-45': '-45deg',
+      },
+      boxShadow: {
+      'white': '0 0px 25px 0 rgba(0, 0, 0, 0.5)',
+      },
+      scale: {
+        '101': '1.01',
+      },
     },
   },
   variants: {
