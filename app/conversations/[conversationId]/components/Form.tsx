@@ -49,6 +49,10 @@ const Form = () => {
         gap-2
         lg:gap-4
         w-full
+        bg-header-image
+        bg-repeat-y
+        bg-center
+        bg-contain
       "
     >
       <CldUploadButton

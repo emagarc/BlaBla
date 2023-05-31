@@ -21,9 +21,8 @@ body,
 }
 
 .bg-header-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: auto 100% !important;
+  background-repeat: repeat-x !important;
 }
 
 .bg-sidebar-image {

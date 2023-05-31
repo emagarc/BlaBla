@@ -16,8 +16,11 @@ module.exports = {
         'sidebar-image': "url('/images/message/honeycomb.svg')",
         'nav-image': "url('/images/sidebar/sidebar8.svg')",
         'empty-image': "url('/images/message/message1.svg')",
-        'header-image': "url('/images/message/color-nav-violet.svg')",
+        'header-image': "url('/images/nav/g10.svg')",
         // Agrega más clases de fondo de pantalla aquí
+      },
+      backgroundSize: {
+        'auto-100': 'auto 100%',
       },
       transformOrigin: {
         '0': '0%',
