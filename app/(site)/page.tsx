@@ -12,7 +12,6 @@ export default function Home() {
       sm:px-6
       lg:px-8
       bg-gray-100
-      bg-home-image
       "
     >
       <div 
@@ -38,8 +37,8 @@ export default function Home() {
           </div>
           <div
             className="
-            bg-white px-4 
-            py-0 shadow 
+            px-4 
+            py-0  
             sm:rounded-lg 
             sm:px-10
             "
@@ -49,10 +48,9 @@ export default function Home() {
                 mt-6
                 text-center
                 text-3xl
-                text-black
                 font-bold
                 tracking-tight
-                bg-white
+                text-gray-900
               "
             >
               Sign in to your account

@@ -9,14 +9,7 @@ async function Sidebar({
 }) {
     const currentUser = await getCurrentUser();
     return (
-            <div 
-                className="
-                    h-full
-                    bg-sidebar-image
-                    bg-contain
-                    bg-repeat-y
-                "
-            >
+            <div className="h-full">
                 <DesktopSidebar currentUser={currentUser!}/>
                 <MobileFooter />
                 <main 

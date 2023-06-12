@@ -49,10 +49,6 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
         justify-between
         items-center
         shadow-sm
-        bg-header-image
-        bg-repeat-y
-        bg-center
-        bg-contain
       "
     >
       <div className="flex gap-3 items-center">
